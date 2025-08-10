@@ -2,12 +2,12 @@
 
 Frontend for the Mortgage Application System. Built using Next.js (App Router) and Tailwind CSS, it provides an intuitive interface for submitting and managing mortgage applications.
 
-
 ---
 
 ## 📌 Description
 
 This frontend application interacts with a Spring Boot backend API to:
+
 - Submit new mortgage applications
 - Approve/Reject/Delete applications (admin-only)
 - Display application status and user information
@@ -45,3 +45,4 @@ cd mortgage-frontend
 npm install
 # or
 yarn install
+```
