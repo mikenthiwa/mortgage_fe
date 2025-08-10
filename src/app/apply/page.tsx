@@ -16,8 +16,12 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 export default function ApplyPage() {
-  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } =
-      useForm<FormData>({ resolver: zodResolver(schema) });
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     await createApplication({
